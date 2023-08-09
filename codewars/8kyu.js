@@ -113,17 +113,18 @@ function findMultiples(integer, limit) {
 
     // set an empty array where values are going to be pushed
     let data = [];
-   
+    let a = integer
+
     // create a conditon thst add multiple of interger so far as it is lesser or equals to limit
-    while (integer <= limit) {
-        data.push(integer);
-        integer += integer
+    while (a <= limit) {
+        data.push(a);
+        a += integer
     }
 
     // return new data after the loop
     return data;
-  }
+}
 
 
 
-console.log(findMultiples(5, 7))
+console.log(findMultiples(5, 25))
