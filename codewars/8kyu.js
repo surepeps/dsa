@@ -126,5 +126,23 @@ function findMultiples(integer, limit) {
 }
 
 
+/**
+ * 7. Stringy Strings
+ * https://www.codewars.com/kata/563b74ddd19a3ad462000054/train/javascript
+ */
+function stringy(size) {
+    // your code here   
+    let result = "";
+    let a = "1";
+    let b = "0";
 
-console.log(findMultiples(5, 25))
+    for(let i = 0; i < size; i++){
+        (i%2 == 0) ? result += a : result += b;
+    }
+
+    return result;
+
+
+  }
+
+console.log(stringy(4))
