@@ -107,8 +107,23 @@ function solution(a, b){
  */
 function findMultiples(integer, limit) {
     //your code here
+    if (integer > limit) {
+        return false;
+    }
+
+    // set an empty array where values are going to be pushed
+    let data = [];
+   
+    // create a conditon thst add multiple of interger so far as it is lesser or equals to limit
+    while (integer <= limit) {
+        data.push(integer);
+        integer += integer
+    }
+
+    // return new data after the loop
+    return data;
   }
 
 
 
-console.log(solution('45', '1'))
+console.log(findMultiples(5, 7))
